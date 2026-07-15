@@ -1,0 +1,10 @@
+.env
+.env.*
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+pip-wheel-metadata/
+models_storage/lstm_stock_model.pth
+models_storage/scaler.pkl

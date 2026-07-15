@@ -1,0 +1,47 @@
+# Common ignores for the entire repository
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Node.js
+**/node_modules/
+**/dist/
+**/build/
+**/.npm/
+**/.vite/
+**/coverage/
+
+# Python
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/venv/
+**/.venv/
+**/env/
+**/pip-wheel-metadata/
+**/.python-version
+
+# Environment files
+**/.env
+**/.env.*
+
+# Logs
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# Temporary files and caches
+*.tmp
+*.temp
+*.bak
+~*
