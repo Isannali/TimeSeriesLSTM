@@ -10,6 +10,12 @@ jobs:
   backend:
     name: Backend Tests
     runs-on: ubuntu-latest
+    env:
+      APP_ENV: ${{ secrets.APP_ENV }}
+      REDIS_URL: ${{ secrets.REDIS_URL }}
+      MODEL_PATH: ${{ secrets.MODEL_PATH }}
+      SCALER_PATH: ${{ secrets.SCALER_PATH }}
+      SEQ_LEN: ${{ secrets.SEQ_LEN }}
     steps:
       - uses: actions/checkout@v4
       - name: Setup Python 3.11
@@ -29,6 +35,12 @@ jobs:
   frontend:
     name: Frontend Tests and Build
     runs-on: ubuntu-latest
+    env:
+      APP_ENV: ${{ secrets.APP_ENV }}
+      REDIS_URL: ${{ secrets.REDIS_URL }}
+      MODEL_PATH: ${{ secrets.MODEL_PATH }}
+      SCALER_PATH: ${{ secrets.SCALER_PATH }}
+      SEQ_LEN: ${{ secrets.SEQ_LEN }}
     steps:
       - uses: actions/checkout@v4
       - name: Setup Node.js
